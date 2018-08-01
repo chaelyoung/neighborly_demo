@@ -1,0 +1,79 @@
+body {
+    /*
+    background: #FCF3DE !important; */
+    background: #FCECD6 !important;
+    /*
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+#navCustom {
+    background: #FCBF32 !important;
+}
+
+#logoImg {
+    width: 25px !important;
+}
+
+#navLogo {
+    font-family: 'Righteous', cursive;
+}
+
+.topNavLink {
+    color: white !important;
+}
+
+.topNavLink:hover {
+    color: yellow !important;
+}
+
+/* SUBNAV */
+
+#subNavCustom {
+    background: #F24030 !important;
+}
+
+.originalPostAvatar {
+    margin-left: -10px !important;
+}
+
+.neighborAvatar {
+    margin-left: -30px !important;
+}
+
+#notice {
+    background: #bfbfbf !important;
+}
+
+/* FOR: signuplogin page*/
+
+#loginSignupJumbo {
+    background: url("signuplogin_bg.jpg") !important;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+#signupLogin {
+    margin-top: 40%;
+}
+
+#loginLogoIcon {
+    width: 75px;
+}
+
+#loginLogoName {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: #F24030;
+    margin-top: -10px;
+}
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Neighborly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navCustom">
+        <img src="logo.png" class="ml-3" id="logoImg">
+        <a class="navbar-brand ml-1" id="navLogo" href="signuplogin.html">Neighborly
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-3">
+            <ul class="navbar-nav">
+                <li class="nav-item pr-1 pl-4">
+                    <a class="nav-link topNavLink" href="sell.html">Settings</a>
+                </li>
+                <li class="nav-item pr-1 pl-4">
+                    <a class="nav-link topNavLink" href="sell.html">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- container for body content -->
+    <div class="container">
+
+        <div class="row mt-3">
+
+            <!-- MAIN SIDEBAR - PROFILE / UPDATES -->
+            <div class="col-md-3 m-0 p-0">
+                <div class="card border-0">
+                    <img class="card-img-top" src="profpic1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">
+                            <small>A longtime resident and former council member of Racoon City.</small>
+                        </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Resident Of
+                            <br>
+                            <small class="text-muted">1234 Capcom Lane</small>
+                        </li>
+                        <li class="list-group-item">Neighboring
+                            <br>
+                            <small class="text-muted">1998 people</small>
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Update Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- column for all posts -->
+            <div class="col-md-9">
+
+                <!-- SUB-NAV - FILTER POSTS -->
+                <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-end rounded" id="subNavCustom">
+                    <div class="container mx-auto">
+                        <div class="input-group" id="navSearchBar">
+                            <input type="text" class="form-control" placeholder="">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light pl-5 pr-5" id="searchBtn" type="button">FIND</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Management</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Neighbors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- sub row & column for posts -->
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- ANNOUNCEMENT #1 -->
+                        <div class="card mt-3 border-danger">
+                            <!-- 
+                            <div class="card-header text-center bg-light text-white border-0 m-0 py-2 pl-3" id="notice">
+                                <strong>NOTICE</strong>
+                            </div>
+                            -->
+                            <div class="card-body">
+                                <!-- POSTER'S AVATAR -->
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <img src="avatar_m2.png" width="50px">
+                                    </div>
+                                    <div class="col-md-11 originalPostAvatar">
+                                        <h5 class="card-title m-0 p-0">ReAnimate Property Managment Inc.</h5>
+                                        <p class="small">5 days ago</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">***AVOID 5th STREET***
+                                    <br>5th Street will be closed off until further notice. We expect that the matter will be
+                                    resolved quickly and as many of you will be affeced, we will remain in contact to further
+                                    inform you. Please contact us for any other questions. Thank you
+                                    <a href="#" class=""> ...See More</a>
+                                </p>
+                                <p class="card-text text-center mt-2">
+                                    <a href="#">Like</a>
+                                    <strong>+0</strong>
+                                </p>
+                            </div>
+                            <!-- container for user responses -->
+                            <div class="container">
+                                <!-- NEIGHBOR COMMENT RESPONSE #1 -->
+                                <div class="card bg-light border-0">
+                                    <div class="card-body">
+
+                                        <!-- NEIGHBOR'S POST AVATAR -->
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="avatar_f.png" width="25px">
+                                            </div>
+                                            <div class="col-md-11 neighborAvatar">
+                                                <p class="card-text">Danika Campbells
+                                                    <small>
+                                                        <em>5 day ago</em>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <p class="card-text small m-0 p-0">What's the reason for this? I use that as a short-cut to work daily :(</p>
+                                        <p class="card-text small text-center mt-2">
+                                            <a href="#">Like</a>
+                                            <strong>+19</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- USER 'CHIME-IN' -->
+                                <div class="form-group mt-2 mb-1">
+                                    <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3" placeholder="Chime in..."></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary mb-3 px-4">Post</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--^^^ END OF ANNOUNCEMENT #1 -->
+
+                        <!-- USER POST #1 -->
+                        <div class="card border-0 mt-3">
+                            <div class="card-body">
+                                <!-- POSTER'S AVATAR -->
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <img src="avatar_m.png" width="50px">
+                                    </div>
+                                    <div class="col-md-11 originalPostAvatar">
+                                        <h5 class="card-title m-0 p-0">Brian Thomas</h5>
+                                        <p class="small">2 days ago</p>
+                                    </div>
+                                </div>
+                                <p class="card-text">I found some medkits behind a dumpster. I don't know why they're there but there's 3 of them
+                                    and I figured someone else could use them. Swing by and pick them up while I still have
+                                    them around. They're brand new!
+                                    <a href="#"> ...See More</a>
+                                </p>
+                                <p class="card-text text-center mt-2">
+                                    <a href="#">Like</a>
+                                    <strong>+0</strong>
+                                </p>
+                            </div>
+
+                            <div class="container">
+                                <!-- NEIGHBOR #1 COMMENT DISPLAY -->
+                                <div class="card bg-light border-0">
+                                    <div class="card-body">
+                                        <!-- NEIGHBOR'S POST AVATAR -->
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="avatar_m.png" width="25px">
+                                            </div>
+                                            <div class="col-md-11 neighborAvatar">
+                                                <p class="card-text">John Jacob Jingleheimer Smith
+                                                    <small>
+                                                        <em>1 day ago</em>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small m-0 p-0">Did anyone see what happened on 5th Street? An entire block was quaranteed by vehicles
+                                            with an umbrella logo. I have a bad feeling about what's happening. You should
+                                            keep those. Something tells me they'll come in handy.</p>
+                                        <p class="card-text small text-center mt-2">
+                                            <a href="#">Like</a>
+                                            <strong>+7</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- NEIGHBOR #2 COMMENT DISPLAY -->
+                                <div class="card bg-light border-0">
+                                    <div class="card-body">
+                                        <!-- NEIGHBOR'S POST AVATAR -->
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="avatar_f.png" width="25px">
+                                            </div>
+                                            <div class="col-md-11 neighborAvatar">
+                                                <p class="card-text">Ginny Hawkinson
+                                                    <small>
+                                                        <em>1 day ago</em>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small m-0 p-0">
+                                            <a href="#">@JohnJingleheimerSmith</a> I live on that block and they took my husband away
+                                            for a checkup. The officials in hazmat suits hauled him off. I just got back
+                                            from a trip and was prevented from even going into my own home. What am I supposed
+                                            to do now?</p>
+                                        <p class="card-text small text-center mt-2">
+                                            <a href="#">Like</a>
+                                            <strong>+2</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- USER CHIME-IN & POST BUTTON -->
+                                <div class="form-group mt-2 mb-1">
+                                    <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3" placeholder="Chime in..."></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary mb-3 px-4">Post</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--^^^ END OF USER POST #1 -->
+
+                        <!-- USER EVENT #1 -->
+                        <div class="card border-0 mt-3 mb-3">
+                            <div class="card-body">
+                                <!-- POSTER'S AVATAR -->
+                                <div class="row">
+                                    <div class="col-md-1">
+                                        <img src="avatar_f.png" width="50px">
+                                    </div>
+                                    <div class="col-md-11 originalPostAvatar">
+                                        <h5 class="card-title m-0 p-0">Janice Wales</h5>
+                                        <p class="small">3 days ago</p>
+                                    </div>
+                                </div>
+                                <img class="card-img-top mb-3" src="bday.jpg" alt="Card image cap">
+                                <p class="card-text m-0">
+                                    <strong>
+                                        <em>Baby Kiara's Bday Party</em>
+                                    </strong>
+                                </p>
+                                <p class="card-text m-0">
+                                    <strong>Date:</strong> Monday, Feb 31st, 2019</p>
+                                <p class="card-text m-0">
+                                    <strong>Time:</strong> 5:00pm - 8:00pm</p>
+                                <p class="card-text m-0">
+                                    <strong>Location:</strong> Janice's Apt, Unit #5</p>
+                                <a href="#"> ...See More</a>
+                                </p>
+                                <p class="card-text text-center mt-2">
+                                    <a href="#">Like</a>
+                                    <strong>+1</strong>
+                                </p>
+                            </div>
+
+                            <div class="container">
+                                <!-- NEIGHBOR #1 COMMENT DISPLAY -->
+                                <div class="card bg-light border-0">
+                                    <div class="card-body">
+                                        <!-- NEIGHBOR'S POST AVATAR -->
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="avatar_f.png" width="25px">
+                                            </div>
+                                            <div class="col-md-11 neighborAvatar">
+                                                <p class="card-text">Anna Banana
+                                                    <small>
+                                                        <em>3 day ago</em>
+                                                    </small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small m-0 p-0">My little Suzie seems to have gotten along well with Kiara since we moved here. Happy
+                                            bday to your daughter. We'll be there :D</p>
+                                        <p class="card-text small text-center mt-2">
+                                            <a href="#">Like</a>
+                                            <strong>+2</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- USER CHIME-IN & POST BUTTON -->
+                                <div class="form-group mt-2 mb-1">
+                                    <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3" placeholder="Chime in..."></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-primary mb-3 px-4">Post</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--^^^ END OF USER EVENT #1 -->
+
+                    </div>
+                </div>
+                <!--^^^ end of sub row & column for posts -->
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

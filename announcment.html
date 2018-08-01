@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Neighborly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ml-3" id="navLogo" href="index1.html">Neighborly
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-3">
+            <ul class="navbar-nav">
+                <li class="nav-item pr-1 pl-4">
+                    <a class="nav-link" href="sell.html">Settings</a>
+                </li>
+                <li class="nav-item pr-1 pl-4">
+                    <a class="nav-link" href="sell.html">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTAINER FOR BODY CONTENT -->
+    <div class="container">
+
+        <div class="row mt-3">
+
+            <!-- ANNOUNCEMENT #1 -->
+            <div class="card mt-3">
+                <div class="card-header text-center bg-light text-dark m-0 py-2 pl-3">
+                    Announcement
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title m-0 p-0">Ravine Property Managment Inc.</h5>
+                    <p class="small">5 days ago</p>
+                    <p class="card-text">***AVOID 5th STREET***
+                        <br>5th Street will be closed off until further notice. We expect that the matter will be resolved quickly
+                        and as many of you will be affeced, we will remain in contact to further inform you. Please contact
+                        us for any other questions. Thank you
+                        <a href="#" class="">See More</a>
+                    </p>
+                    <p class="card-text text-center mt-2">
+                        <a href="#">Like</a>
+                        <strong>+0</strong>
+                    </p>
+                </div>
+                <!-- container for user responses -->
+                <div class="container">
+                    <!-- NEIGHBOR COMMENT RESPONSE #1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text m-0 p-0">Danika Campbells
+                                <small>
+                                    <em>5 day ago</em>
+                                </small>
+                            </p>
+                            <p class="card-text small m-0 p-0">What's the reason for this? I use that as a short-cut to work daily :(</p>
+                            <p class="card-text small text-center mt-2">
+                                <a href="#">Like</a>
+                                <strong>+19</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- USER 'CHIME-IN' -->
+                    <div class="form-group mt-2 mb-1">
+                        <textarea class="form-control bg-light" id="exampleFormControlTextarea1" rows="3" placeholder="Chime in..."></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary mb-3 px-4">Post</button>
+                    </div>
+                </div>
+
+            </div>
+            <!--^^^ END OF ANNOUNCEMENT #1 -->
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
