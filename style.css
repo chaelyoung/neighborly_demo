@@ -10,6 +10,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Secondary link color*/
+.secondarylink {
+    color: #007BFF !important;
+}
+
+.secondarylink:hover {
+    color: #0069d9 !important;
+}
+
 /* NAVBAR */
 
 #navCustom {
@@ -76,4 +85,6 @@ body {
     color: #F24030;
     margin-top: -10px;
 }
+
+/* FOR: newusersignup page*/
 
