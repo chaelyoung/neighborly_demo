@@ -17,6 +17,8 @@
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -44,47 +46,96 @@
 
     <!-- container for body content -->
 
-    <div class="row">
-        <div class="col-md-4 offset-4">
+    <!-- SIGNUP INFO JUMBO -->
+    <div class="jumbotron jumbotron-fluid" id="newUserSignUpJumbo">
+        <div class="container">
 
-            <div class="jumbotron jumbotron-fluid" id="newUserSignUpJumbo">
-                <div class="container" id="mainJumboContainer">
+            <div class="row m-0 p-0">
+
+                <div class="col-md-4 m-0 px-3">
+                    <div class="card text-center bg-transparent border-0 infoCards">
+                        <div class="card-block">
+                            <img class="card-img-top pb-5 infoImg" src="signup_icon.png" alt="Search">
+                            <h3 class="card-title text-center infoCardTitle">Sign Up</h3>
+                            <p class="card-text text-center">Signup with the invite-code provided by your property management company.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-md-4 m-0 px-3">
+                    <div class="card text-center bg-transparent border-0 infoCards">
+                        <div class="card-block">
+                            <img class="card-img-top pb-5 infoImg" src="getintouch_icon.png" alt="Find">
+                            <h3 class="card-title text-center infoCardTitle">Get In Touch</h3>
+                            <p class="card-text text-center">Introduce yourself, then share something and get to know your neighbors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 m-0 px-3">
+                    <div class="card text-center bg-transparent border-0 infoCards">
+                        <div class="card-block">
+                            <img class="card-img-top pb-5 infoImg" src="stayinformed_icon.png" alt="Go">
+                            <h3 class="card-title text-center infoCardTitle">Stay Informed</h3>
+                            <p class="card-text text-center">Pipe burst while you're away? Stay up to date with the on-goings of your building through direct
+                                notifications from management.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </div>
 
-            <form>
+    <div class="row">
+        <div class="col-md-6 offset-3">
+
+            <!-- Form -->
+            <form class="create-form">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">First Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="Bob Baker">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Last Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="exampleFormControlInput1">Address</label>
+                    <input type="address" class="form-control" id="address" placeholder="12345 Cherry Lane">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">City</label>
+                            <input type="City" class="form-control" id="city" placeholder="Minneapolis">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">State</label>
+                            <select class="form-control" id="state">
+                                <option>MN</option>
+                                <option>WI</option>
+                                <option>IA</option>
+                                <option>IL</option>
+                                <option>MI</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Zip Code</label>
+                            <input type="Zip Code" class="form-control" id="zipcode" placeholder="12345">
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect2">Example multiple select</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <label for="exampleFormControlTextarea1">Describe Yourself</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <div class="input-group-append justify-content-center">
+                    <a href="" class="btn btn-primary border-0 px-4" id="">Submit</a>
                 </div>
+                <br>
             </form>
 
         </div>

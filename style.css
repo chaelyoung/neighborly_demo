@@ -1,7 +1,11 @@
 body {
     /*
-    background: #FCF3DE !important; */
+    background: #FCF3DE !important;
     background: #FCECD6 !important;
+    background: #EFF6FC !important;
+    background: #E6ECF2 !important;
+    background: #F2F8FF !important;*/
+    background: #EDF4F9 !important;
     /*
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,6 +51,26 @@ body {
     background: #F24030 !important;
 }
 
+#subNavSearchBtn {
+    background: #007BFF !important;
+    color: white !important;
+}
+
+#subNavSearchBtn:hover {
+    background: #0069d9 !important;
+    color: white !important;
+}
+
+/*
+.searchIconCustom {
+    color: white !important;
+}
+
+.searchIconCustom:hover {
+    color: red !important;
+}
+*/
+
 .originalPostAvatar {
     margin-left: -10px !important;
 }
@@ -87,4 +111,15 @@ body {
 }
 
 /* FOR: newusersignup page*/
+
+#newUserSignUpJumbo {
+    background: #7AB5DD !important;
+    color: white;
+}
+
+.infoImg {
+    width: 100px !important;
+}
+
+
 
