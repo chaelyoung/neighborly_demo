@@ -5,7 +5,7 @@ body {
     background: #EFF6FC !important;
     background: #E6ECF2 !important;
     background: #F2F8FF !important;*/
-    background: #EDF4F9 !important;
+    background: #DEE5EA !important;
     /*
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,10 +39,15 @@ body {
 
 .topNavLink {
     color: white !important;
+    font-weight: bold !important;
 }
 
 .topNavLink:hover {
     color: yellow !important;
+}
+
+.card-link {
+    font-weight: bold !important;
 }
 
 /* SUBNAV */
